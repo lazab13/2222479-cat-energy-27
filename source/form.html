@@ -10,8 +10,7 @@
 
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo-company.svg" width="191" height="38"
-        alt="Логотип Кэт энерджи.">
+      <img src="img/logo-company.svg" width="191" height="38" alt="Логотип Кэт энерджи.">
     </a>
 
     <nav class="main-nav">
@@ -58,27 +57,44 @@
         </h2>
 
         <fieldset class="form__item">
-          <label class="form__label">
-            Имя:<sup>*</sup>
-            <input class="form__input" type="text" name="cat-name" placeholder="Барсик" required>
-          </label>
+          <ul class="form__user user-list">
+            <li class="user-list__item">
+              <label class="user-list__label" for="cat-name">
+                Имя:<sup>*</sup>
+              </label>
 
-          <label class="form__label">
-            Вес(кг):<sup>*</sup>
-            <input class="form__input" type="text" name="weight" placeholder="7" required>
-          </label>
+              <div class="user-list__input">
+                <input type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              </div>
+            </li>
 
-          <label class="form__label">
-            Возраст (лет):
-            <input class="form__input" type="text" name="age" placeholder="7">
-          </label>
+            <li class="user-list__item">
+              <label class="user-list__label" for="weight">
+                Вес(кг):<sup>*</sup>
+              </label>
+
+              <div class="user-list__input">
+                <input type="text" name="weight" id="weight" placeholder="7" required>
+              </div>
+            </li>
+
+            <li class="user-list__item">
+              <label class="user-list__label" for="age">
+                Возраст (лет):
+              </label>
+
+              <div class="user-list__input">
+                <input type="text" name="age" id="age" placeholder="7">
+              </div>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__item">
           <ul class="form__list list-form">
             <li class="list-form__item">
               <label class="list-form__label">
-                <input class="list-form__input" type="radio" name="weight-loss" checked>
+                <input class="list-form__input" type="radio" name="slim" checked>
                 <span class="list-form__text">
                   Похудение
                 </span>
@@ -87,7 +103,7 @@
 
             <li class="list-form__item">
               <label class="list-form__label">
-                <input class="list-form__input" type="radio" name="weight-gain">
+                <input class="list-form__input" type="radio" name="gain">
                 <span class="list-form__text">
                   Набор массы
                 </span>
@@ -106,27 +122,37 @@
         </fieldset>
 
         <fieldset class="form__item">
-          <legend class="form__title">
-            Контактные данные (владельца кота)
-          </legend>
+          <ul class="form__user user-list">
+            <li class="user-list__item">
+              <label class="user-list__label" for="email">
+                E-mail:<sup>*</sup>
+              </label>
 
-          <label class="form__label">
-            E-mail:<sup>*</sup>
-            <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com"
-              required>
-          </label>
+              <div class="user-list__input user-list__input--email">
+                <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+            </li>
 
-          <label class="form__label">
-            Телефон:<sup>*</sup>
-            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-              required>
-          </label>
+            <li class="user-list__item">
+              <label class="user-list__label" for="tel">
+                Телефон:<sup>*</sup>
+              </label>
+
+              <div class="user-list__input user-list__input--tel">
+                <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              </div>
+            </li>
+          </ul>
         </fieldset>
 
         <div class="form__item">
           <h2 class="form__title">
             Комментарий
           </h2>
+
+          <label class="visually-hidden">
+            Напишите комментарий
+          </label>
 
           <textarea class="form__comment" rows="10">
             Расскажите обо всех повадках кота
@@ -177,13 +203,15 @@
           </ul>
         </fieldset>
 
-        <button class="form__button" type="submit">
-          Отправить заявку
-        </button>
+        <div class="form__wraper">
+          <button class="form__button" type="submit">
+            Отправить заявку
+          </button>
 
-        <span class="form__control">
-          <sup>*</sup>— Обязательные поля
-        </span>
+          <span class="form__control">
+            <sup>*</sup>— Обязательные поля
+          </span>
+        </div>
       </form>
     </section>
 
@@ -198,8 +226,8 @@
         </p>
 
         <p class="address-content__address-store">
-          ул. Большая<br>
-          Конюшенная, д. 19/8<br>
+          ул. Большая
+          Конюшенная, д. 19/8
           Санкт-Петербург
         </p>
       </div>
@@ -209,11 +237,9 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__logo">
-      <a class="main-footer__logo-icon">
-        <img src="img/logo-title.svg" width="101" height="18" alt="Наазвание Компании.">
-      </a>
-    </div>
+    <a class="main-footer__logo">
+      <img src="img/logo-title.svg" width="101" height="18" alt="Наазвание Компании.">
+    </a>
 
     <div class="main-footer__social social">
       <ul class="social__list">
@@ -243,8 +269,10 @@
           HTML Academy
         </span>
 
-        <img class="html-academy__logo" src="img/html-academy-logo.svg" width="27" height="34"
-          alt="Логотип HTML Academy.">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
+          <path fill="#666"
+            d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
+        </svg>
       </a>
     </div>
   </footer>
