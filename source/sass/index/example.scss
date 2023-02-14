@@ -1,0 +1,79 @@
+.example {
+  padding: 25px 20px 40px;
+  background-color: hsl(0, 0%, 92%);
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__wraqper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__desc {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-align: center;
+}
+
+.example__aside {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.example__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
