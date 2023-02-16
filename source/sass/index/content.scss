@@ -1,0 +1,13 @@
+.content {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.content__item {
+  background-color: hsl(0, 0%, 95%);
+  margin-bottom: 20px;
+}
+
+.content__item:last-child {
+  margin-bottom: 0;
+}
