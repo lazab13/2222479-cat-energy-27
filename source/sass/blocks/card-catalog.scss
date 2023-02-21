@@ -1,7 +1,4 @@
 .card-catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -21,11 +18,7 @@
 }
 
 .card-catalog__item {
-  // display: flex;
-  // justify-content: space-between;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $lato;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -38,9 +31,7 @@
 }
 
 .card-catalog__text {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $lato;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -48,20 +39,17 @@
 
 .card-catalog__button {
   display: block;
-  width: 190px;
-  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: hsl(97, 53%, 47%);
-  margin: 0 auto;
+  background-color: #69b738;
   padding: 7px 44px;
 }
 
 .card-catalog__button--color {
   color: #444444;
-  background-color: hsl(0, 0%, 95%);
+  background-color: #f2f2f2;
 }
-

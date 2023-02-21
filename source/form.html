@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +22,7 @@
         </span>
       </button>
 
-      <div class="main-nav__wraper">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -57,80 +58,88 @@
           программу питания для вашего кота
         </h2>
 
-        <fieldset class="form__item">
-          <ul class="form__user user-list">
-            <li class="user-list__item">
-              <label class="user-list__label" for="cat-name">
-                Имя:<sup>*</sup>
-              </label>
+        <div class="form__wrapper">
+          <fieldset class="form__user ">
+            <ul class="user-list">
+              <li class="user-list__item">
+                <label class="user-list__label" for="cat-name">
+                  Имя:<sup>*</sup>
+                </label>
 
-              <div class="user-list__input">
-                <input type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-              </div>
-            </li>
+                <div class="user-list__input-wrapper">
+                  <input class="user-list__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
+                    required>
+                </div>
+              </li>
 
-            <li class="user-list__item">
-              <label class="user-list__label" for="weight">
-                Вес(кг):<sup>*</sup>
-              </label>
+              <li class="user-list__item">
+                <label class="user-list__label" for="weight">
+                  Вес(кг):<sup>*</sup>
+                </label>
 
-              <div class="user-list__input">
-                <input type="text" name="weight" id="weight" placeholder="7" required>
-              </div>
-            </li>
+                <div class="user-list__input-wrapper">
+                  <input class="user-list__input" type="text" name="weight" id="weight" placeholder="7" required>
+                </div>
+              </li>
 
-            <li class="user-list__item">
-              <label class="user-list__label" for="age">
-                Возраст (лет):
-              </label>
+              <li class="user-list__item">
+                <label class="user-list__label" for="age">
+                  Возраст (лет):
+                </label>
 
-              <div class="user-list__input">
-                <input type="text" name="age" id="age" placeholder="7">
-              </div>
-            </li>
-          </ul>
-        </fieldset>
+                <div class="user-list__input-wrapper">
+                  <input class="user-list__input" type="text" name="age" id="age" placeholder="7">
+                </div>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="form__item">
-          <ul class="form__list list-form">
-            <li class="list-form__item">
-              <label class="list-form__label">
-                <input class="list-form__input" type="radio" name="slim" checked>
-                <span class="list-form__text">
-                  Похудение
-                </span>
-              </label>
-            </li>
+          <fieldset class="form__list">
+            <ul class="list-form">
+              <li class="list-form__item">
+                <label class="list-form__label">
+                  <input class="list-form__input" type="radio" name="program" value="slim" checked>
+                  <span class="list-form__text">
+                    Похудение
+                  </span>
+                </label>
+              </li>
 
-            <li class="list-form__item">
-              <label class="list-form__label">
-                <input class="list-form__input" type="radio" name="gain">
-                <span class="list-form__text">
-                  Набор массы
-                </span>
-              </label>
-            </li>
+              <li class="list-form__item">
+                <label class="list-form__label">
+                  <input class="list-form__input" type="radio" name="program" value="gain">
+                  <span class="list-form__text">
+                    Набор массы
+                  </span>
+                </label>
+              </li>
 
-            <li class="list-form__item">
-              <label class="list-form__label">
-                <input class="list-form__input" type="radio" name="advice">
-                <span class="list-form__text">
-                  Не знаю (Нужен ваш совет)
-                </span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+              <li class="list-form__item">
+                <label class="list-form__label">
+                  <input class="list-form__input" type="radio" name="program" value="gain">
+                  <span class="list-form__text">
+                    Не знаю (Нужен ваш совет)
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__item">
-          <ul class="form__user user-list">
+        <fieldset class="form__owner">
+          <h1 class="form__owner-title">
+            Контактные данные (владельца кота)
+          </h1>
+
+          <ul class="user-list user-list__layout">
             <li class="user-list__item">
               <label class="user-list__label" for="email">
                 E-mail:<sup>*</sup>
               </label>
 
-              <div class="user-list__input user-list__input--email">
-                <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <div class="user-list__input-wrapper user-list__input-wrapper--icon">
+                <input class="user-list__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
+                  required>
               </div>
             </li>
 
@@ -139,36 +148,36 @@
                 Телефон:<sup>*</sup>
               </label>
 
-              <div class="user-list__input user-list__input--tel">
-                <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <div class="user-list__input-wrapper user-list__input-wrapper--icon">
+                <input class="user-list__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
               </div>
             </li>
           </ul>
         </fieldset>
 
-        <div class="form__item">
-          <h2 class="form__title">
+        <div class="form__comment">
+          <h1 class="form__comment-title">
             Комментарий
-          </h2>
+          </h1>
 
           <label class="visually-hidden">
             Напишите комментарий
           </label>
 
-          <textarea class="form__comment" rows="10">
+          <textarea class="form__comment-description" rows="10">
             Расскажите обо всех повадках кота
           </textarea>
         </div>
 
-        <fieldset class="form__item">
-          <legend class="form__title">
+        <fieldset class="form__additional">
+          <legend class="form__additional-title">
             Дополнительно
           </legend>
 
-          <ul class="form__list list-form">
+          <ul class="list-form list-form__layout">
             <li class="list-form__item">
               <label class="list-form__label">
-                <input class="list-form__input" type="checkbox" name="sweetener" checked>
+                <input class="list-form__input" type="checkbox" name="additional" value="sweetener" checked>
                 <span class="list-form__text">
                   Сахарозаменитель
                 </span>
@@ -177,7 +186,7 @@
 
             <li class="list-form__item">
               <label class="list-form__label">
-                <input class="list-form__input" type="checkbox" name="water">
+                <input class="list-form__input" type="checkbox" name="additional" value="water">
                 <span class="list-form__text">
                   Питьевая вода
                 </span>
@@ -186,7 +195,7 @@
 
             <li class="list-form__item">
               <label class="list-form__label">
-                <input class="list-form__input" type="checkbox" name="milk">
+                <input class="list-form__input" type="checkbox" name="additional" value="milk">
                 <span class="list-form__text">
                   Молоко
                 </span>
@@ -204,7 +213,7 @@
           </ul>
         </fieldset>
 
-        <div class="form__wraper">
+        <div class="form__wrapper-button">
           <button class="form__button" type="submit">
             Отправить заявку
           </button>
@@ -233,7 +242,8 @@
         </p>
       </div>
 
-      <img class="store-location__picture" src="img/location.png" width="320" height="362" alt="Карта с расположением магазина.">
+      <img class="store-location__picture" src="img/location.png" width="320" height="362"
+        alt="Карта с расположением магазина.">
     </section>
   </main>
 
@@ -323,7 +333,7 @@
     </div>
 
     <div class="main-footer__html-academy html-academy">
-      <a class="html-academy__item" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="html-academy__text">
           HTML Academy
         </span>

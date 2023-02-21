@@ -1,0 +1,33 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 66px 0;
+  }
+}
+
+.main-footer__logo {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__social {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
