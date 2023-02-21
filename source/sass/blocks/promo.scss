@@ -1,11 +1,17 @@
 .promo {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
-  padding: 27px 20px 20px;
-  text-transform: uppercase;
+  background-color: #68b738d9;
+  padding: 27px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desctop-width) {
+    color: #000000;
+    background-color: #ffffff;
+  }
 }
 
 .promo__title {
@@ -19,6 +25,7 @@
 .promo__text {
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   text-align: center;
   margin: 0;
   margin-bottom: 29px;
@@ -33,13 +40,12 @@
 .promo__button {
   display: block;
   width: 190px;
-  font-family: "Oswald", sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: hsl(97, 53%, 47%);
-  margin: 0 auto;
+  background-color: #69b738;
   padding: 7px 44px;
 }

@@ -1,31 +1,32 @@
 // Общие свойства для 3-х страниц
-@use "variables.scss";
-@use "font.scss";
-@use "page.scss";
-@use "main-header.scss";
-@use "site-list.scss";
-@use "store-location.scss";
-@use "address-content.scss";
-@use "main-footer.scss";
-@use "social.scss";
-@use "html-academy.scss";
+@import "varibles";
+@import "./blocks/global";
+@import "./blocks/font";
+@import "./blocks/page";
+@import "./blocks/main-header";
+@import "./blocks/site-list";
+@import "./blocks/store-location";
+@import "./blocks/address-content";
+@import "./blocks/main-footer";
+@import "./blocks/social";
+@import "./blocks/html-academy";
+@import "./blocks/main-nav.scss";
 
 // Index
-@use "./index/promo.scss";
-@use "./index/content.scss";
-@use "./index/card-content.scss";
-@use "./index/advantages.scss";
-@use "./index/example.scss";
+@import "./blocks/promo";
+@import "./blocks/content";
+@import "./blocks/card-content";
+@import "./blocks/advantages";
+@import "./blocks/example";
 
 // Catalog
-@use "./catalog/catalog.scss";
-@use "./catalog/card-catalog.scss";
-@use "./catalog/catalog-another.scss";
-@use "./catalog/card-catalog-another.scss";
+@import "./blocks/catalog";
+@import "./blocks/card-catalog";
+@import "./blocks/catalog-another";
+@import "./blocks/card-catalog-another";
 
 // Form
-@use "./form/form-container.scss";
-@use "./form/program-cat.scss";
-@use "./form/form.scss";
-@use "./form/user-list.scss";
-@use "./form/list-form.scss"
+@import "./blocks/program-cat";
+@import "./blocks/form";
+@import "./blocks/user-list";
+@import "./blocks/list-form"

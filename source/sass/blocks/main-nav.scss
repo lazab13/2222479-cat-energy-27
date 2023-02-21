@@ -1,0 +1,9 @@
+.main-nav__toogle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}

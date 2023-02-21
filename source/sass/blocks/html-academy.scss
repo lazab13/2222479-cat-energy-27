@@ -1,0 +1,12 @@
+.html-academy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.html-academy__link {
+  font-family: $lato;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}

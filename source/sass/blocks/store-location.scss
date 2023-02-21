@@ -1,0 +1,25 @@
+.store-location__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 56px 60px 80px;
+  }
+}
+
+.store-location__picture {
+  @media (min-width: $tablet-width) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: -110px;
+    margin-right: -110px;
+  }
+}
