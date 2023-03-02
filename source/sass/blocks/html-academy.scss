@@ -1,12 +1,28 @@
 .html-academy {
-  display: flex;
-  justify-content: space-between;
+  width: 281px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .html-academy__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: $lato;
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
   color: #444444;
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+    transition: fill 0.3s;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
