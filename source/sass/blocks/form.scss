@@ -349,6 +349,15 @@
   margin-bottom: 21px;
   cursor: pointer;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #ffffff4d;
+    background-color: #5eaa2f;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-bottom: 0;

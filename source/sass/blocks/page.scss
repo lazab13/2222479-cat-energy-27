@@ -5,11 +5,10 @@
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
-  border: 2px solid #ff0000;
+  // border: 2px solid #ff0000;
 
   @media (min-width: $tablet-width) {
-    width: 769px;
-    border: 2px solid #ff0000;
+    width: 768px;
   }
 
   @media (min-width: $desctop-width) {
