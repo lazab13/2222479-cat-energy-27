@@ -1,38 +1,33 @@
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background-color: #ffffff;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 45px;
+    gap: 30px;
+    padding: 0 30px 45px;
   }
 
   @media (min-width: $desctop-width) {
-    display: flex;
-    padding: 82px 0 71px;
+    flex-direction: row;
+    padding: 82px 110px 71px;
+    gap: 80px;
   }
 }
 
 .content__item {
   background-color: #f2f2f2;
   padding: 30px 30px 18px 20px;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 62px 53px 52px;
-    margin-bottom: 30px;
   }
 
   @media (min-width: $desctop-width) {
+    box-sizing: border-box;
+    width: 570px;
     padding: 41px 61px 55px 52px;
-    margin-bottom: 0;
-    margin-right: 80px;
-  }
-}
-
-.content__item:last-child {
-  margin-bottom: 0;
-
-  @media (min-width: $desctop-width) {
-    margin-right: 0;
   }
 }

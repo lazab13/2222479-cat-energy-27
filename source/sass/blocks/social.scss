@@ -3,7 +3,20 @@
   list-style: none;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 104px;
+  width: 132px;
   margin: 0;
   padding: 0;
+}
+
+.social__link {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+    transition: fill 0.3s;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

@@ -1,3 +1,16 @@
+.card-catalog-another__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 610px;
+    margin-bottom: 0;
+  }
+}
+
 .card-catalog-another__title {
   font-size: 16px;
   line-height: 16px;
@@ -7,6 +20,8 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
     margin-bottom: 0;
   }
 }
@@ -14,6 +29,21 @@
 .card-catalog-another__description {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 134px 42px;
+    column-gap: 49px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: 131px 42px;
+    column-gap: 112px;
+    text-align: left;
+  }
 }
 
 .card-catalog-another__text {
@@ -21,15 +51,35 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card-catalog-another__button {
   display: block;
   text-decoration: none;
   text-align: center;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   background-color: #69b738;
   padding: 7px 44px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #ffffff4d;
+    background-color: #5eaa2f;
+  }
+
+  @media (min-width: $desctop-width) {
+    box-sizing: border-box;
+    padding: 7px 26px;
+    width: 244px;
+  }
 }
