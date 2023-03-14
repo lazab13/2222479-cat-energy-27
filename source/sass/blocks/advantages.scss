@@ -7,6 +7,9 @@
   }
 
   @media (min-width: $desctop-width) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1440px;
     padding: 0 110px 69px;
     border-bottom: none;
   }
@@ -33,10 +36,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  counter-reset: index;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 249px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 153px;
     row-gap: 37px;
   }
@@ -49,46 +53,33 @@
   }
 }
 
-.advantages__list li:nth-child(1) {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/advantages-number-1.svg");
-    background-repeat: no-repeat;
-    background-position: center right 64px;
-  }
-}
-
-.advantages__list li:nth-child(2) {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/advantages-number-2.svg");
-    background-repeat: no-repeat;
-    background-position: center right 10px;
-  }
-}
-
-.advantages__list li:nth-child(3) {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/advantages-number-3.svg");
-    background-repeat: no-repeat;
-    background-position: center right 10px;
-  }
-}
-
-.advantages__list li:nth-child(4) {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/advantages-number-4.svg");
-    background-repeat: no-repeat;
-    background-position: center right 10px;
-  }
-}
-
 .advantages__item {
+  position: relative;
   display: flex;
   align-items: center;
+  counter-increment: listCounter;
+
+  &::before {
+    content: counters(index, '.', decimal) ' ';
+    counter-increment: index;
+    position: absolute;
+    display: none;
+    font-family: $oswald;
+    color: #f2f2f2;
+    font-size: 280px;
+    z-index: -1;
+    top: -100px;
+    right: 14px;
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: flex-start;
     padding: 40px 0 63px;
+
+    &::before {
+      display: block;
+    }
   }
 }
 

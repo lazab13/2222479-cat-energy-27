@@ -44,10 +44,10 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
+    width: 100%;
     top: 70px;
     right: 0;
     z-index: 10;
-    min-height: 198px;
     background-color: #ffffff;
   }
 
@@ -58,13 +58,11 @@
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
-  min-height: 0;
-  width: 280px;
 }
 
 .main-nav--nojs .site-list {
   display: block;
-  width: 280px;
+  width: 100%;
 }
 
 .main-nav--nojs .site-list__item {

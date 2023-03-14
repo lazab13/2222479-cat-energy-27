@@ -35,8 +35,10 @@
   }
 }
 
-.list-checkbox-control-mark {
+.list-checkbox__label::before {
+  content: "";
   position: absolute;
+  box-sizing: border-box;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -49,11 +51,16 @@
   }
 }
 
-.list-checkbox__input:checked + .list-checkbox-control-mark::before {
+.list-checkbox__label:hover::before {
+  border-color: #bababa;
+}
+
+.list-checkbox__label::after {
   content: "";
   position: absolute;
   background-image: url("../img/checkbox-icon.svg");
   background-repeat: no-repeat;
+  display: none;
   width: 18px;
   height: 14px;
   top: 7px;
@@ -67,6 +74,10 @@
     top: 9px;
     left: 9px;
   }
+}
+
+.list-checkbox__input:checked + .list-checkbox__label::after {
+  display: block;
 }
 
 .list-checkbox__text {

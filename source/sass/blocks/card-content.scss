@@ -37,6 +37,7 @@
 }
 
 .card-content__icon-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,14 +58,19 @@
   }
 
   @media (min-width: $desctop-width) {
-    position: static;
+    position: relative;
     width: 100px;
     height: 100px;
+    top: 0;
+    right: 0;
     margin-right: 62px;
   }
 }
 
 .card-content__icon--slim {
+  position: absolute;
+  top: -3px;
+
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
@@ -73,10 +79,14 @@
   @media (min-width: $desctop-width) {
     width: 70px;
     height: 97px;
+    top: -6px;
   }
 }
 
 .card-content__icon--pro {
+  position: absolute;
+  right: -5px;
+
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
@@ -85,6 +95,7 @@
   @media (min-width: $desctop-width) {
     width: 134px;
     height: 56px;
+    right: -5px;
   }
 }
 
@@ -129,6 +140,7 @@
 
   &:hover {
     background-image: url("../img/card-content-arrow-hover.svg");
+    transition: 0.5s;
   }
 
   &:active {

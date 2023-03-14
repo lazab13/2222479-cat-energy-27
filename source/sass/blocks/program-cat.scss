@@ -1,12 +1,12 @@
 .program-cat {
-  padding: 27px 20px 32px;
+  padding: 27px 0 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 3px 70px 67px 72px;
+    padding: 3px 0 72px;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 0 110px 82px;
+    padding: 0 0 82px;
   }
 }
 
@@ -16,14 +16,20 @@
   color: #000000;
   margin: 0;
   margin-bottom: 37px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desctop-width) {
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
     margin-bottom: 56px;
+    padding: 0 110px;
   }
 }

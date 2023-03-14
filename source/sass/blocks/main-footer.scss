@@ -1,9 +1,12 @@
 .main-footer {
+  background-color: #f2f2f2;
+}
+
+.main-footer__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
@@ -13,6 +16,9 @@
   }
 
   @media (min-width: $desctop-width) {
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
     padding: 66px 110px;
   }
 }

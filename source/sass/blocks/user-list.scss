@@ -46,8 +46,6 @@
 
 .user-list__input {
   font-family: $oswald;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -56,17 +54,15 @@
   padding: 14px 35px 14px 15px;
   border: 1px solid #e7e7e7;
   width: 100%;
+  outline: none;
 
   &:hover {
     border: 1px solid #cdcdcd;
   }
 
-  &:active {
-    border: 2px solid #444444;
-  }
-
   &:focus {
-    border: 2px solid #444444;
+    // outline: 2px solid #444444;
+    box-shadow: 0 0 0 2px #444444 inset;
   }
 
   &:focus + .user-list__icon {
@@ -74,7 +70,12 @@
   }
 
   &:focus:invalid {
-    border: 2px solid #ff8282;
+    // outline: 2px solid #ff8282;
+    box-shadow: 0 0 0 2px #ff8282 inset;
+  }
+
+  &:focus:invalid + .user-list__icon {
+    stroke: #ff8282;
   }
 
   @media (min-width: $tablet-width) {

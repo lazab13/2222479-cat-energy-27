@@ -1,40 +1,35 @@
 .catalog {
-  padding: 27px 20px 25px;
+  padding: 27px 0 25px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 68px;
+    border: none;
   }
 
   @media (min-width: $desctop-width) {
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
     padding: 0 110px 76px;
   }
 }
 
 .catalog__title {
-  position: relative;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 49px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 40px);
-    border: 1px solid #ebebeb;
-    bottom: -41px;
-    left: -20px;
-  }
+  margin-bottom: 23px;
+  padding: 0 20px 41px;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    position: static;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 82px;
-
-    &::before {
-      display: none;
-    }
+    padding: 0;
+    border: none;
   }
 
   @media (min-width: $desctop-width) {
@@ -45,20 +40,20 @@
 .catalog__list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 23px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 60px;
   }
 
   @media (min-width: $desctop-width) {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     row-gap: 63px;
   }
@@ -66,19 +61,19 @@
 
 .catalog__item {
   @media (min-width: $tablet-width) {
-    padding: 8px 36px 39px;
-    background: linear-gradient(#ffffff 23%, #f2f2f2 23%);
-  }
-
-  @media (min-width: $desctop-width) {
-    padding: 0 38px 40px 39px;
+    background: linear-gradient(#ffffff 81px, #f2f2f2 81px);
   }
 }
 
 .catalog__item:last-child {
   @media (min-width: $tablet-width) {
+    align-self: end;
     padding-top: 52px;
     background: #ffffff;
     border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 40px;
   }
 }

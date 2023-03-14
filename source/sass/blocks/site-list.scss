@@ -5,17 +5,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 440px;
+    border: none;
   }
 
   @media (min-width: $desctop-width) {
-    background-color: #68b738;
+    position: relative;
+    width: 478px;
+    z-index: 10;
   }
 }
 
@@ -46,7 +48,9 @@
     padding: 18px 0 12px;
     border: 0;
   }
+}
 
+.site-list__link--color {
   @media (min-width: $desctop-width) {
     color: #ffffff;
   }
@@ -65,7 +69,9 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
 
+.site-list__link--current-index::before {
   @media (min-width: $desctop-width) {
     background-color: #ffffff;
   }

@@ -1,0 +1,135 @@
+.cat-boris {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin: 0;
+  }
+}
+
+.cat-boris__before {
+  background-image: url("../img/cat-boris-before.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-boris-before@2x.png");
+    width: 280px;
+    height: 256px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-boris-before-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-boris-before-tablet@2x.png");
+      width: 560px;
+      height: 512px;
+    }
+  }
+}
+
+.cat-boris__after {
+  background-image: url("../img/cat-boris-after.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -143px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-boris-after@2x.png");
+    width: 280px;
+    height: 256px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-boris-after-tablet.png");
+    background-position: -284px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-boris-after-tablet@2x.png");
+      width: 560px;
+      height: 512px;
+    }
+  }
+}
+
+.cat-boris__toogle {
+  position: absolute;
+  background-image: url("../img/cat-boris-toogle.svg");
+  background-repeat: no-repeat;
+  top: 42%;
+  left: 43%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 46%;
+  }
+}
+
+.cat-boris__toogle::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 116px;
+  background-color: #666666;
+  border-radius: 2px;
+  right: 18px;
+  bottom: -287%;
+
+  @media (min-width: $tablet-width) {
+    height: 217px;
+    bottom: 40px;
+  }
+}
+
+.cat-boris__toogle::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 116px;
+  background-color: #666666;
+  border-radius: 2px;
+  right: 18px;
+  top: -287%;
+
+  @media (min-width: $tablet-width) {
+    height: 257px;
+    top: 40px;
+  }
+}
+
+.cat-boris__toogle:hover {
+  background-image: url("../img/cat-boris-toogle-hover.svg");
+}
+
+.cat-boris__toogle:active {
+  opacity: 0.6;
+}
+
+.cat-boris__toogle:hover::before {
+  background-color: #68b738;
+}
+
+.cat-boris__toogle:hover::after {
+  background-color: #68b738;
+}
+
+.cat-boris__toogle:active::before {
+  background-color: #5eaa2f;
+}
+
+.cat-boris__toogle:active::after {
+  background-color: #5eaa2f;
+}
