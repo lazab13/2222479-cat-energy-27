@@ -4,13 +4,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 100px;
-    background: linear-gradient(#ffffff 70%, #ebebeb 70%);
+    background: linear-gradient(#ffffff 600px, #ebebeb 600px);
     background-color: #ffffff;
   }
 
   @media (min-width: $desctop-width) {
     padding: 0;
-    background: linear-gradient(#ffffff 23%, #ebebeb 23%);
+    background: linear-gradient(#ffffff 170px, #ebebeb 170px);
   }
 }
 
@@ -173,4 +173,3 @@
     width: 327px;
   }
 }
-
