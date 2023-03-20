@@ -29,7 +29,6 @@
 .list-radio__label::before {
   content: "";
   position: absolute;
-  box-sizing: border-box;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -48,10 +47,10 @@
   border-color: #bababa;
 }
 
-.list-radio__label::after {
+.list-radio__text::after {
   content: "";
   position: absolute;
-  display: none;
+  opacity: 0;
   width: 12px;
   height: 12px;
   background-color: #68b738;
@@ -67,8 +66,8 @@
   }
 }
 
-.list-radio__input:checked + .list-radio__label::after {
-  display: block;
+.list-radio__input:checked + .list-radio__text::after {
+  opacity: 1;
 }
 
 .list-radio__text {

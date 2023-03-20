@@ -1,11 +1,13 @@
-.store-location {
-  @media (min-width: $desctop-width) {
-    position: relative;
-  }
-}
-
 .store-location--color {
   background-color: #f2f2f2;
+}
+
+.store-location__wrapper {
+  @media (min-width: $desctop-width) {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .store-location__content {
@@ -19,7 +21,6 @@
 
   @media (min-width: $desctop-width) {
     position: absolute;
-    box-sizing: border-box;
     width: 565px;
     padding: 56px 60px 56px 80px;
     background-color: #ffffff;

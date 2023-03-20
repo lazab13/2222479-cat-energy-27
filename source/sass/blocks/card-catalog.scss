@@ -30,16 +30,6 @@
   }
 }
 
-.card-catalog__layout--another {
-  @media (min-width: $tablet-width) {
-    margin-top: 34px;
-  }
-
-  @media (min-width: $desctop-width) {
-    margin-top: 24px;
-  }
-}
-
 .card-catalog__wrapper {
   display: flex;
   flex-direction: column;
@@ -58,6 +48,8 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 34px;
+    height: 200px;
+    align-items: flex-end;
   }
 }
 
@@ -70,12 +62,11 @@
 .card-catalog__picture--another {
   @media (min-width: $tablet-width) {
     width: 168px;
-    height: 206px;
+    height: auto;
   }
 
   @media (min-width: $desctop-width) {
     width: 172px;
-    height: auto;
   }
 }
 

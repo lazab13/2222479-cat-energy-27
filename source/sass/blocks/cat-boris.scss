@@ -28,11 +28,11 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-boris-before-tablet.png");
+    width: 560px;
+    height: 512px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-boris-before-tablet@2x.png");
-      width: 560px;
-      height: 512px;
     }
   }
 }
@@ -52,11 +52,11 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-boris-after-tablet.png");
     background-position: -284px;
+    width: 560px;
+    height: 512px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-boris-after-tablet@2x.png");
-      width: 560px;
-      height: 512px;
     }
   }
 }

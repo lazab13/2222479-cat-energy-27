@@ -13,7 +13,6 @@
 
 .catalog-another__content {
   @media (min-width: $desctop-width) {
-    box-sizing: border-box;
     width: 1440px;
     margin: 0 auto;
     padding: 0 110px 86px;
@@ -129,14 +128,14 @@
   justify-content: center;
   align-items: center;
   background-color: #68b738d9;
-  padding: 59px 61px 43px 58px;
+  // padding: 59px 61px 43px 58px;
+  padding: 21% 22% 15% 21%;
   background-image: url("../img/cat-aside.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-aside@2x.png");
-    background-size: 280px auto;
     background-position: center;
   }
 
@@ -146,7 +145,6 @@
     justify-content: space-between;
     padding: 57px 124px 60px 77px;
     background-image: url("../img/cat-aside-tablet.png");
-    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-aside-tablet@2x.png");

@@ -130,20 +130,29 @@
   background-image: url("../img/card-content-arrow.svg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 24px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  width: 87px;
+  width: 134px;
   padding: 4px 47px 4px 0;
 
+  @media (min-width: $tablet-width) {
+    width: 165px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 168px;
+  }
+
   &:hover {
-    background-image: url("../img/card-content-arrow-hover.svg");
-    transition: 0.5s;
+    background-size: 32px 12px;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.2s;
   }
 }
