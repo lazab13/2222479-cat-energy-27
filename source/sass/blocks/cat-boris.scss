@@ -61,16 +61,19 @@
   }
 }
 
-.cat-boris__toogle {
+.cat-boris__toggle {
   position: absolute;
-  background-image: url("../img/cat-boris-toogle.svg");
-  background-repeat: no-repeat;
-  top: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 41%;
   left: 43%;
   width: 40px;
   height: 40px;
+  padding: 0;
   border-radius: 50%;
-  border: none;
+  border: 2px solid #666666;
+  fill: #666666;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -78,58 +81,59 @@
   }
 }
 
-.cat-boris__toogle::before {
+.cat-boris__toggle::before {
   content: "";
   position: absolute;
   width: 4px;
   height: 116px;
   background-color: #666666;
   border-radius: 2px;
-  right: 18px;
-  bottom: -287%;
+  right: 16px;
+  bottom: -321%;
 
   @media (min-width: $tablet-width) {
     height: 217px;
-    bottom: 40px;
+    bottom: 36px;
   }
 }
 
-.cat-boris__toogle::after {
+.cat-boris__toggle::after {
   content: "";
   position: absolute;
   width: 4px;
   height: 116px;
   background-color: #666666;
   border-radius: 2px;
-  right: 18px;
-  top: -287%;
+  right: 16px;
+  top: -321%;
 
   @media (min-width: $tablet-width) {
     height: 257px;
-    top: 40px;
+    top: 36px;
   }
 }
 
-.cat-boris__toogle:hover {
-  background-image: url("../img/cat-boris-toogle-hover.svg");
+.cat-boris__toggle:hover {
+  border-color: #68b738;
+  fill: #68b738;
 }
 
-.cat-boris__toogle:active {
+.cat-boris__toggle:active {
   opacity: 0.6;
 }
 
-.cat-boris__toogle:hover::before {
+.cat-boris__toggle:hover::before {
   background-color: #68b738;
 }
 
-.cat-boris__toogle:hover::after {
+.cat-boris__toggle:hover::after {
   background-color: #68b738;
 }
 
-.cat-boris__toogle:active::before {
+.cat-boris__toggle:active::before {
   background-color: #5eaa2f;
 }
 
-.cat-boris__toogle:active::after {
+.cat-boris__toggle:active::after {
   background-color: #5eaa2f;
 }

@@ -63,6 +63,16 @@
 .main-nav--nojs .site-list {
   display: block;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 478px;
+  }
 }
 
 .main-nav--nojs .site-list__item {
@@ -71,6 +81,10 @@
 
 .main-nav--nojs .site-list__link {
   padding: 22px 50px 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0 12px;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {

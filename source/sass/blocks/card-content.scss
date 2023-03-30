@@ -126,10 +126,8 @@
 }
 
 .card-content__button {
-  display: block;
-  background-image: url("../img/card-content-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+  display: flex;
+  justify-content: space-between;
   background-size: 24px;
   font-size: 16px;
   line-height: 16px;
@@ -137,7 +135,6 @@
   text-decoration: none;
   color: #000000;
   width: 134px;
-  padding: 4px 47px 4px 0;
 
   @media (min-width: $tablet-width) {
     width: 165px;
@@ -147,8 +144,8 @@
     width: 168px;
   }
 
-  &:hover {
-    background-size: 32px 12px;
+  &:hover .card-content__arrow {
+    transform: scaleX(1.4);
   }
 
   &:active {
@@ -156,3 +153,13 @@
     transition: 0.2s;
   }
 }
+
+.card-content__arrow {
+  align-self: center;
+  width: 24px;
+  height: 12px;
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: transform 0.5s;
+}
+

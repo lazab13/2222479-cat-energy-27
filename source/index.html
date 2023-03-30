@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -14,7 +14,7 @@
 
 <body class="page__body">
 
-  <header class="main-header main-header--background">
+  <header class="main-header main-header--background main-header--nojs">
     <a class="main-header__link" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-company-desktop.svg">
@@ -103,7 +103,7 @@
 
           <div class="card-content__icon-wrapper">
             <svg class="card-content__icon card-content__icon--slim" width="36" height="50">
-              <use xlink:href="img/sprait.svg#icon-slim"></use>
+              <use xlink:href="img/sprite.svg#cat-slim"></use>
             </svg>
           </div>
         </div>
@@ -114,7 +114,13 @@
         </p>
 
         <a class="card-content__button" href="#">
-          Каталог slim
+          <span>
+            Каталог slim
+          </span>
+
+          <svg class="card-content__arrow">
+            <use xlink:href="img/sprite.svg#card-content-arrow"></use>
+          </svg>
         </a>
       </div>
 
@@ -126,7 +132,7 @@
 
           <div class="card-content__icon-wrapper">
             <svg class="card-content__icon card-content__icon--pro" width="67" height="28">
-              <use xlink:href="img/sprait.svg#icon-pro"></use>
+              <use xlink:href="img/sprite.svg#cat-pro"></use>
             </svg>
           </div>
         </div>
@@ -137,7 +143,13 @@
         </p>
 
         <a class="card-content__button" href="#">
-          Каталог pro
+          <span>
+            Каталог pro
+          </span>
+
+          <svg class="card-content__arrow">
+            <use xlink:href="img/sprite.svg#card-content-arrow"></use>
+          </svg>
         </a>
       </div>
     </section>
@@ -152,7 +164,7 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="26" height="28">
-                <use xlink:href="img/sprait.svg#advantages-icon-1"></use>
+                <use xlink:href="img/sprite.svg#advantages-icon-1"></use>
               </svg>
             </div>
 
@@ -164,7 +176,7 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="26" height="29">
-                <use xlink:href="img/sprait.svg#advantages-icon-2"></use>
+                <use xlink:href="img/sprite.svg#advantages-icon-2"></use>
               </svg>
             </div>
 
@@ -176,7 +188,7 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="25" height="30">
-                <use xlink:href="img/sprait.svg#advantages-icon-3"></use>
+                <use xlink:href="img/sprite.svg#advantages-icon-3"></use>
               </svg>
             </div>
 
@@ -188,7 +200,7 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="26" height="31">
-                <use xlink:href="img/sprait.svg#advantages-icon-4"></use>
+                <use xlink:href="img/sprite.svg#advantages-icon-4"></use>
               </svg>
             </div>
 
@@ -251,7 +263,10 @@
 
           <div class="cat-boris__after"></div>
 
-          <button class="cat-boris__toogle" type="button">
+          <button class="cat-boris__toggle" type="button">
+            <svg width="24" height="18">
+              <use xlink:href=" img/sprite.svg#cat-boris-toggle"></use>
+            </svg>
             <span class="visually-hidden">
               До и после
             </span>
@@ -290,7 +305,7 @@
     <div class="main-footer__content">
       <a class="main-footer__logo" href="#">
         <svg width="129" height="24">
-          <use xlink:href="img/sprait.svg#main-footer-logo"></use>
+          <use xlink:href="img/sprite.svg#footer-logo"></use>
         </svg>
       </a>
 
@@ -299,7 +314,7 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="29" height="22">
-                <use xlink:href="img/sprait.svg#vkontakte"></use>
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
 
               <span class="visually-hidden">Вконтакте</span>
@@ -309,7 +324,7 @@
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg width="29" height="22">
-                <use xlink:href="img/sprait.svg#youtube"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
 
               <span class="visually-hidden">Ютуб</span>
@@ -319,7 +334,7 @@
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <svg width="29" height="22">
-                <use xlink:href="img/sprait.svg#telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
 
               <span class="visually-hidden">Телеграм</span>
@@ -335,14 +350,14 @@
           </span>
 
           <svg width="27" height="34">
-            <use xlink:href="img/sprait.svg#html-academy-icon"></use>
+            <use xlink:href="img/sprite.svg#html-academy-logo"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
