@@ -1,11 +1,16 @@
 .social__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  column-gap: 24px;
+  row-gap: 10px;
   list-style: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
   width: 132px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 107px;
+  }
 }
 
 .social__link {

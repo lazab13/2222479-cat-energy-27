@@ -14,7 +14,7 @@
   @media (min-width: $desctop-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 39px;
+    margin-bottom: 41px;
   }
 }
 
@@ -46,14 +46,16 @@
   height: 50px;
   background-color: #69b738;
   border-radius: 50%;
-  margin-right: 19px;
+  margin-right: 22px;
+  left: 3px;
+  top: -1px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 200px;
     height: 200px;
     top: 25%;
-    right: 62px;
+    left: 63%;
     margin-right: 0;
   }
 
@@ -61,8 +63,8 @@
     position: relative;
     width: 100px;
     height: 100px;
-    top: 0;
-    right: 0;
+    top: 2px;
+    left: 0;
     margin-right: 62px;
   }
 }
@@ -74,6 +76,7 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
+    top: -10px;
   }
 
   @media (min-width: $desctop-width) {
@@ -85,17 +88,20 @@
 
 .card-content__icon--pro {
   position: absolute;
-  right: -5px;
+  right: -8px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
+    right: -35px;
+    top: -4px;
   }
 
   @media (min-width: $desctop-width) {
     width: 134px;
     height: 56px;
-    right: -5px;
+    right: -15px;
+    top: 20px;
   }
 }
 
@@ -107,7 +113,7 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     width: 340px;
@@ -116,19 +122,17 @@
     color: #000000;
     padding-bottom: 0;
     border-bottom: 0;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desctop-width) {
     width: 457px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 
 .card-content__button {
   display: flex;
-  justify-content: space-between;
-  background-size: 24px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -137,6 +141,8 @@
   width: 134px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     width: 165px;
   }
 
@@ -154,12 +160,17 @@
   }
 }
 
+.card-content__text {
+  margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 27px;
+  }
+}
+
 .card-content__arrow {
   align-self: center;
-  width: 24px;
-  height: 12px;
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;
 }
-

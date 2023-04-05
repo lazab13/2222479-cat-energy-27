@@ -1,3 +1,30 @@
+.store-location__map--nojs {
+  background-image: url("../img/location.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffe4c4;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/location-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    background-image: url("../img/location-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.png");
+    }
+  }
+}
+
 .store-location--color {
   background-color: #f2f2f2;
 }
@@ -16,15 +43,15 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 40px;
+    padding: 62px 70px;
   }
 
   @media (min-width: $desctop-width) {
     position: absolute;
     width: 565px;
-    padding: 56px 60px 56px 80px;
+    padding: 56px 75px 56px 80px;
     background-color: #ffffff;
-    top: 95px;
+    top: 100px;
     left: 110px;
   }
 }
@@ -33,6 +60,7 @@
   display: block;
   width: 100%;
   min-height: 362px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;

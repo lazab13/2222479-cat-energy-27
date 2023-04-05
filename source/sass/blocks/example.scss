@@ -4,13 +4,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 100px;
-    background: linear-gradient(#ffffff 600px, #ebebeb 600px);
+    background: linear-gradient(#ffffff 619px, #ebebeb 619px);
     background-color: #ffffff;
   }
 
   @media (min-width: $desctop-width) {
     padding: 0;
-    background: linear-gradient(#ffffff 170px, #ebebeb 170px);
+    background: linear-gradient(#ffffff 135px, #ebebeb 135px);
   }
 }
 
@@ -70,6 +70,14 @@
   }
 }
 
+.example__description br {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
+}
+
 .example__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,7 +91,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
@@ -91,11 +99,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: $desctop-width) {
     display: block;
+    margin: 0;
   }
 }
 
@@ -109,20 +118,25 @@
   border-radius: 2px;
 }
 
-.example__mesange {
+.example__message {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
   padding-top: 14px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text {
   position: absolute;
   width: 77px;
   bottom: 0;
-  transform: translateY(50%);
+  transform: translateY(66%);
   z-index: 1;
   font-family: $lato;
   text-transform: lowercase;
@@ -160,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    gap: 9px;
     font-size: 20px;
     text-align: right;
     width: 174px;

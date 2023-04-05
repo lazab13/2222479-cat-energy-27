@@ -1,7 +1,9 @@
 .address-content__text {
+  width: 139px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: left;
   color: #111111;
   margin: 0;
 
@@ -9,10 +11,12 @@
     font-size: 20px;
     line-height: 26px;
     width: 172px;
+    margin: 0;
   }
 }
 
 .address-content__address-store {
+  width: 139px;
   font-family: $lato;
   font-size: 14px;
   line-height: 20px;
@@ -20,15 +24,23 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 16px;
     width: 160px;
     text-align: right;
   }
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+  }
 }
 
-.adress-content__city {
+.address-content__address-store br {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
-    margin-top: 28px;
   }
 }

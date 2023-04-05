@@ -26,6 +26,14 @@
       }
     ],
     "no-inline-styles": "off",
-    "manifest-app-name": "off"
+    "manifest-app-name": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          " is not supported by Chrome, Chrome Android, Edge, Firefox, Firefox for Android, Opera, Safari, Safari on iOS, Samsung Internet. Add "
+        ]
+      }
+    ]
   }
 }

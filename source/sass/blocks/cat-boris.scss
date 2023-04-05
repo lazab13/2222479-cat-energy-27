@@ -12,6 +12,7 @@
 
   @media (min-width: $desctop-width) {
     margin: 0;
+    align-self: flex-start;
   }
 }
 
@@ -19,17 +20,18 @@
   background-image: url("../img/cat-boris-before.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 280px;
+  height: 256px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-boris-before@2x.png");
-    width: 280px;
-    height: 256px;
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-boris-before-tablet.png");
     width: 560px;
     height: 512px;
+    background-position: 2px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-boris-before-tablet@2x.png");
@@ -41,17 +43,17 @@
   background-image: url("../img/cat-boris-after.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -143px;
+  width: 280px;
+  height: 256px;
+  background-position: -139px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-boris-after@2x.png");
-    width: 280px;
-    height: 256px;
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-boris-after-tablet.png");
-    background-position: -284px;
+    background-position: -279px;
     width: 560px;
     height: 512px;
 
@@ -78,6 +80,7 @@
 
   @media (min-width: $tablet-width) {
     left: 46%;
+    top: 46%;
   }
 }
 
@@ -85,15 +88,20 @@
   content: "";
   position: absolute;
   width: 4px;
-  height: 116px;
+  height: 113px;
   background-color: #666666;
   border-radius: 2px;
   right: 16px;
-  bottom: -321%;
+  bottom: -315%;
 
   @media (min-width: $tablet-width) {
-    height: 217px;
+    height: 239px;
     bottom: 36px;
+    right: 13px;
+  }
+
+  @media (min-width: $desctop-width) {
+    right: 14px;
   }
 }
 
@@ -101,15 +109,20 @@
   content: "";
   position: absolute;
   width: 4px;
-  height: 116px;
+  height: 107px;
   background-color: #666666;
   border-radius: 2px;
   right: 16px;
-  top: -321%;
+  top: -298%;
 
   @media (min-width: $tablet-width) {
-    height: 257px;
+    height: 239px;
     top: 36px;
+    right: 13px;
+  }
+
+  @media (min-width: $desctop-width) {
+    right: 14px;
   }
 }
 

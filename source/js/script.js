@@ -1,9 +1,13 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let mainheader = document.querySelector('.main-header--nojs');
+let mainHeader = document.querySelector('.main-header--nojs');
+let mainLink =  document.querySelector('.main-header__link--nojs');
+let storeLocation =  document.querySelector('.store-location__map--nojs');
 
 navMain.classList.remove('main-nav--nojs');
-mainheader.classList.remove('main-header--nojs');
+mainHeader.classList.remove('main-header--nojs');
+mainLink.classList.remove('main-header__link--nojs');
+storeLocation.classList.remove('store-location__map--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {

@@ -16,20 +16,20 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 59px;
     padding: 0 70px;
   }
 
   @media (min-width: $desctop-width) {
     width: 1440px;
     margin: 0 auto;
-    margin-bottom: 66px;
+    margin-bottom: 61px;
     padding: 0 110px;
   }
 }
@@ -50,7 +50,7 @@
 
 .form__input-icon-title {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   width: 187px;
 
   &::after {
@@ -58,40 +58,40 @@
     position: absolute;
     display: none;
     width: 10000%;
-    border: 2px solid #68b738;
+    border: 1px solid #68b738;
 
     @media (min-width: $tablet-width) {
       display: block;
-      top: 50%;
+      top: 61%;
       right: calc(100% + 39px);
     }
 
     @media (min-width: $desctop-width) {
-      top: 55%;
+      top: 60%;
     }
   }
 
   &::before {
     content: "";
     position: absolute;
-    border: 2px solid #68b738;
+    border: 1px solid #68b738;
     width: 10000%;
-    top: 25%;
+    top: 28%;
     left: calc(100% + 14px);
 
     @media (min-width: $tablet-width) {
-      top: 50%;
+      top: 61%;
       right: calc(100% + 42px);
     }
 
     @media (min-width: $desctop-width) {
-      top: 55%;
+      top: 60%;
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: 514px;
-    margin-bottom: 76px;
+    width: 539px;
+    margin-bottom: 72px;
   }
 }
 
@@ -105,49 +105,49 @@
     position: absolute;
     display: none;
     width: 10000%;
-    border: 2px solid #68b738;
+    border: 1px solid #68b738;
 
     @media (min-width: $tablet-width) {
       display: block;
-      top: 50%;
+      top: 61%;
       right: calc(100% + 39px);
     }
 
     @media (min-width: $desctop-width) {
-      top: 55%;
+      top: 67%;
     }
   }
 
   &::before {
     content: "";
     position: absolute;
-    border: 2px solid #68b738;
+    border: 1px solid #68b738;
     width: 10000%;
-    top: 50%;
+    top: 56%;
     left: calc(100% + 22px);
 
     @media (min-width: $tablet-width) {
-      top: 50%;
+      top: 61%;
       right: calc(100% + 41px);
     }
 
     @media (min-width: $desctop-width) {
-      top: 55%;
+      top: 67%;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
-    width: 182px;
+    width: 196px;
   }
 }
 
 .form__wrapper {
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    margin-bottom: 71px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desctop-width) {
@@ -163,7 +163,7 @@
 
 .form__checkbox-title {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 38px;
   width: 141px;
 
   &::after {
@@ -171,40 +171,40 @@
     position: absolute;
     display: none;
     width: 10000%;
-    border: 2px solid #68b738;
+    border: 1px solid #68b738;
 
     @media (min-width: $tablet-width) {
       display: block;
-      top: 50%;
+      top: 61%;
       right: calc(100% + 39px);
     }
 
     @media (min-width: $desctop-width) {
-      top: 55%;
+      top: 62%;
     }
   }
 
   &::before {
     content: "";
     position: absolute;
-    border: 2px solid #68b738;
+    border: 1px solid #68b738;
     width: 10000%;
-    top: 50%;
+    top: 56%;
     left: calc(100% + 23px);
 
     @media (min-width: $tablet-width) {
-      top: 50%;
+      top: 61%;
       right: calc(100% + 42px);
     }
 
     @media (min-width: $desctop-width) {
-      top: 55%;
+      top: 63%;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
-    width: 211px;
+    margin-bottom: 62px;
+    width: 228px;
   }
 }
 
@@ -243,30 +243,22 @@
 
 .form__radio {
   margin: 0;
-  padding: 23px 20px 18px 20px;
+  padding: 23px 20px 21px;
   border: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 28px;
+    padding: 27px 28px;
     border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 32px 28px;
   }
 }
 
 .form__input-icon {
-  margin-bottom: 24px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: $desctop-width) {
-    margin-bottom: 67px;
-  }
-}
-
-.form__textarea {
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -278,15 +270,27 @@
   }
 }
 
-.form__checkbox {
-  margin-bottom: 34px;
+.form__textarea {
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 61px;
+    margin-bottom: 64px;
+  }
+}
+
+.form__checkbox {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 66px;
   }
 }
 
@@ -299,16 +303,19 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 9px 12px;
+  padding: 9px 14px;
   border: 1px solid #e7e7e7;
 
   &:focus {
     box-shadow: 0 0 0 2px #444444 inset;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
     padding: 10px 19px;
     min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -337,15 +344,15 @@
 .form__button {
   font-family: $oswald;
   font-style: normal;
-  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   border: none;
   color: #ffffff;
   background-color: #69b738;
   width: 280px;
-  padding: 7px 44px;
+  padding: 10px 44px;
   margin-bottom: 21px;
   cursor: pointer;
 
@@ -361,12 +368,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-bottom: 0;
-    padding: 13px 45px;
+    padding: 16px 45px;
   }
 
   @media (min-width: $desctop-width) {
     width: auto;
-    padding: 13px 188px;
+    padding: 16px 188px;
   }
 }
 
@@ -377,6 +384,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    width: 178px;
     font-size: 16px;
     line-height: 16px;
   }

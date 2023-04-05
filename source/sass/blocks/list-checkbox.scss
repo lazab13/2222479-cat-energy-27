@@ -2,28 +2,27 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 18px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 221px 189px;
-    column-gap: 123px;
-    row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 59px;
+    row-gap: 42px;
   }
 
   @media (min-width: $desctop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 82px;
   }
 }
 
 .list-checkbox__label {
   position: relative;
-  padding: 6px 0 6px 46px;
+  padding: 4px 0 6px 46px;
   cursor: pointer;
 
   &:disabled {
@@ -35,7 +34,19 @@
   }
 }
 
-.list-checkbox__label::before {
+.list-checkbox__text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.list-checkbox__text::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -50,11 +61,7 @@
   }
 }
 
-.list-checkbox__label:hover::before {
-  border-color: #bababa;
-}
-
-.list-checkbox__label::after {
+.list-checkbox__text::after {
   content: "";
   position: absolute;
   background-image: url("../img/checkbox-icon.svg");
@@ -62,7 +69,7 @@
   display: none;
   width: 18px;
   height: 14px;
-  top: 7px;
+  top: 8px;
   left: 6px;
 
   @media (min-width: $tablet-width) {
@@ -75,18 +82,14 @@
   }
 }
 
-.list-checkbox__input:checked + .list-checkbox__label::after {
+.list-checkbox__input:checked + .list-checkbox__text::after {
   display: block;
 }
 
-.list-checkbox__text {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
+.list-checkbox__text:hover::before {
+  border-color: #bababa;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
+.list-checkbox__input:focus + .list-checkbox__text::before {
+  border-color: #928d8d;
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -23,7 +23,7 @@
 .user-list__item {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 16px;
 }
 
 .user-list__label {
@@ -50,7 +50,7 @@
   color: #444444;
   text-transform: uppercase;
   margin: 0;
-  padding: 14px 38px 14px 15px;
+  padding: 14px 38px 14px 20px;
   border: 1px solid #e7e7e7;
   width: 100%;
   outline: none;
@@ -60,7 +60,6 @@
   }
 
   &:focus {
-    // outline: 2px solid #444444;
     box-shadow: 0 0 0 2px #444444 inset;
   }
 
@@ -69,7 +68,6 @@
   }
 
   &:focus:invalid {
-    // outline: 2px solid #ff8282;
     box-shadow: 0 0 0 2px #ff8282 inset;
   }
 
@@ -84,6 +82,14 @@
   }
 }
 
+.user-list__input--icon {
+  padding: 13px 38px 15px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 45px 9px 25px;
+  }
+}
+
 .user-list__input-wrapper--icon {
   position: relative;
 }
@@ -92,8 +98,8 @@
   position: absolute;
   stroke: #000000;
   fill: none;
-  top: 35%;
-  right: 13px;
+  top: 38%;
+  right: 16px;
 
   @media (min-width: $tablet-width) {
     right: 18px;
