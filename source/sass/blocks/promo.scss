@@ -1,14 +1,9 @@
 .promo {
   color: #ffffff;
   padding: 27px 20px 0;
-  background-image: url("../img/cat-promo.png");
-  // background-image: webkit-image-set(
-  //   url("../img/cat-promo.png") type("image/png"),
-  //   url("../img/cat-promo.webp") type("image/webp")
-  // );
+  background: linear-gradient(#69b738 81px, #69b738 81px), url("../img/cat-promo.png");
   background-repeat: no-repeat;
   background-size: 100% 302px;
-  background-color: #647758;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-promo@2x.png");

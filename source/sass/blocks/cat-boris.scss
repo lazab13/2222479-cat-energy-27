@@ -79,8 +79,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    left: 46%;
-    top: 46%;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
   }
 }
 
@@ -97,11 +97,11 @@
   @media (min-width: $tablet-width) {
     height: 239px;
     bottom: 36px;
-    right: 13px;
+    right: 15px;
   }
 
   @media (min-width: $desctop-width) {
-    right: 14px;
+    right: 16px;
   }
 }
 
@@ -118,11 +118,11 @@
   @media (min-width: $tablet-width) {
     height: 239px;
     top: 36px;
-    right: 13px;
+    right: 15px;
   }
 
   @media (min-width: $desctop-width) {
-    right: 14px;
+    right: 16px;
   }
 }
 
