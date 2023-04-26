@@ -147,7 +147,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    margin-bottom: 76px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $desctop-width) {
@@ -156,7 +156,7 @@
     display: grid;
     grid-template-columns: 569px 568px;
     column-gap: 80px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
     padding: 0 110px;
   }
 }
@@ -203,7 +203,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 62px;
+    margin-bottom: 53px;
     width: 228px;
   }
 }
@@ -243,13 +243,13 @@
 
 .form__radio {
   margin: 0;
-  padding: 23px 20px 21px;
+  padding: 27px 20px 24px;
   border: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 28px;
+    padding: 29px 28px 27px;
     border: 1px solid #e7e7e7;
   }
 
@@ -266,7 +266,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 68px;
   }
 }
 
@@ -286,11 +286,11 @@
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 58px;
   }
 }
 

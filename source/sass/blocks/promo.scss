@@ -1,16 +1,18 @@
 .promo {
+  position: relative;
   color: #ffffff;
   padding: 27px 20px 0;
-  background: linear-gradient(#69b738 81px, #69b738 81px), url("../img/cat-promo.png");
+  background-image: url("../img/cat-promo.png");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-position: top center;
+  background-size: 320px 302px;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-promo@2x.png");
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     color: #000000;
     background-color: #ffffff;
     background-image: none;
@@ -23,6 +25,22 @@
     width: 1440px;
     min-height: 499px;
     padding: 35px 110px 0;
+  }
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  height: 302px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(100, 168, 61) 320px, rgb(98, 166, 59) 320px);
+  background-size: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

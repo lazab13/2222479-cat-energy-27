@@ -138,16 +138,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  width: 134px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 165px;
-  }
-
-  @media (min-width: $desctop-width) {
-    width: 168px;
   }
 
   &:hover .card-content__arrow {
@@ -161,15 +155,18 @@
 }
 
 .card-content__text {
+  max-width: calc(100% - 37px);
   margin-right: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 27px;
+    max-width: calc(100% - 45px);
+    margin-right: 24px;
   }
 }
 
 .card-content__arrow {
   align-self: center;
+  justify-self: end;
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;

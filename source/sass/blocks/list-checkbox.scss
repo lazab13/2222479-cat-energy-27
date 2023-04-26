@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 13px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 59px;
-    row-gap: 42px;
+    row-gap: 26px;
   }
 
   @media (min-width: $desctop-width) {
@@ -22,27 +22,25 @@
 
 .list-checkbox__label {
   position: relative;
-  padding: 4px 0 6px 46px;
   cursor: pointer;
 
   &:disabled {
     opacity: 0.3;
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 9px 0 6px 60px;
-  }
 }
 
 .list-checkbox__text {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  padding: 4px 0 6px 46px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 9px 0 6px 60px;
   }
 }
 
@@ -53,11 +51,16 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   left: 0;
-  top: 0;
+  top: -2px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    top: 3px;
+  }
+
+  @media (min-width: $desctop-width) {
+    top: 4px;
   }
 }
 
@@ -69,7 +72,7 @@
   display: none;
   width: 18px;
   height: 14px;
-  top: 8px;
+  top: 5px;
   left: 6px;
 
   @media (min-width: $tablet-width) {
@@ -77,8 +80,12 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 18px;
-    top: 9px;
-    left: 9px;
+    top: 13px;
+    left: 8px;
+  }
+
+  @media (min-width: $desctop-width) {
+    top: 14px;
   }
 }
 

@@ -6,8 +6,15 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.main-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 30px 62px;
   }
 
@@ -50,10 +57,10 @@
     width: 50%;
     height: 694px;
     background-image: url("../img/cat-promo-desktop.png");
-    background-color: #68b738d9;
+    background-color: #5eaa34;
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: cover;
+    background-size: 720px auto;
     display: none;
     top: 0;
     right: 0;

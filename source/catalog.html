@@ -17,45 +17,47 @@
 <body class="page__body">
 
   <header class="main-header main-header--nojs">
-    <a class="main-header__link main-header__link--nojs" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-company-desktop.svg">
+    <div class="main-header__wrapper">
+      <a class="main-header__link main-header__link--nojs" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-company-desktop.svg">
 
-        <source media="(min-width: 768px)" srcset="img/logo-company-tablet.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-company-tablet.svg">
 
-        <img class="main-header__logo" src="img/logo-company.svg" width="191" height="38" alt="Логотип Кэт энерджи.">
-      </picture>
-    </a>
+          <img class="main-header__logo" src="img/logo-company.svg" width="191" height="38" alt="Логотип Кэт энерджи.">
+        </picture>
+      </a>
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
 
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page__main-container">
@@ -519,12 +521,6 @@
         </li>
 
         <li class="catalog__item card-catalog card-catalog--another">
-          <div class="card-catalog__icon-wrapper">
-            <svg class="card-catalog__icon" width="30" height="30">
-              <use xlink:href="img/sprite.svg#plus"></use>
-            </svg>
-          </div>
-
           <h2 class="card-catalog__title card-catalog__title--another">
             Показать еще<br> 100500 товаров
           </h2>
@@ -638,12 +634,6 @@
           </ul>
 
           <aside class="catalog-another__aside">
-            <div class="catalog-another__icon-wrapper">
-              <svg class="catalog-another__icon" width="78" height="80">
-                <use xlink:href="img/sprite.svg#icon_gift"></use>
-              </svg>
-            </div>
-
             <p class="catalog-another__text">
               Закажите все<br>
               и получите чехол для
